@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 24px;
+}
+
+body {
+    background-color: black;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid darkslategray;
+    border-radius: 50px;
+}
+
+.operator-button {
+    background-color: rgba(255, 0, 0, .8);
+}
+
+button:hover {
+    background-color: rgb(255, 123, 0);
+}
+
+.large-button {
+    grid-column: span 2;
+}
+
+.display {
+    background-color: black;
+    grid-column: -1 / 1;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 10px;
+    color: rgba(255, 123, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid white;
+    opacity: .8;
+}
